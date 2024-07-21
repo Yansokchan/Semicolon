@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semicolon</title>
+    <link rel="stylesheet" href="./cart.css" />
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./product.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="header" id="main">
+      <section class="left-section">
+        <img class="menu" id="menu-icon" src="icon/menu.png" alt="" />
+        <a href="home.html">
+          <img
+            class="semicolon-logo"
+            src="icon/semicolon-logo.png"
+            alt="semicolon-logo"
+            title="Home"
+          />
+        </a>
+      </section>
+      <section class="middle-section">
+        <input class="search-bar" id="js-search-bar" placeholder="Search" />
+        <img class="search-icon" src="icon/search-icon.png" title="Search" />
+      </section>
+      <section class="right-section">
+        <a class="cart js-cart-icon" href="#">
+          <div class="cart-btn">
+            <img class="cart-icon" src="icon/cart-icon.png" title="Checkout" />
+            <div class="cart-quantity js-cart-quantity"></div>
+          </div>
+        </a>
+      </section>
+    </header>
+    <main>
+      <div class="main" id="main">
+        <div
+          class="product-flex js-product-flex"
+          id="js-product-flex"
+          data-aos="fade-down"
+        ></div>
+      </div>
+      <div class="hideBtn" id="seemore-btn"></div>
+      <div class="menu-bar" id="menu-bar">
+        <ul>
+          <li class="home-menu" id="home">
+            <a class="home" href="#">
+              <img src="icon/home.png" alt="Home" />
+              <p>Home</p>
+            </a>
+          </li>
+          <li class="popular-menu" id="popular">
+            <a class="popular" href="#">
+              <img src="icon/popular.png" alt="Popular" />
+              <p>Popular Item</p>
+            </a>
+          </li>
+          <li class="about-menu" id="about">
+            <a href="about.html" class="a-about">
+              <img class="about-icon" src="icon/about.png" alt="About" />
+              <p>About</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="back-menu" id="back">
+            <a href="#">
+              <img src="icon/back.png" alt="Login" />
+              <p>Back</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div class="cart-item" id="cart-item">
+      <div class="header-cart">
+        <h1>MY CART</h1>
+        <hr width="100%" color=" #DA5A0F" />
+      </div>
+      <div class="list-cart" id="list-cart"></div>
+      <div class="total-price">
+        <p class="total">Total:</p>
+        <p class="js-total-price"></p>
+      </div>
+      <div class="buttons"></div>
+    </div>
+    <div class="footer">
+      <div class="company">
+        <p>Company:</p>
+        <p>SEMICOLON🍀</p>
+      </div>
+      <hr width="100%" color=" #DA5A0F" />
+      <div class="contact">
+        <p>Contact Us:</p>
+        <div class="contact-logo">
+          <a target="_blank" href="https://t.me/YanSokchan" title="Yan Sokchan">
+            <img src="product/telegram-logo.webp" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/kh.boyloy.1?mibextid=JRoKGi"
+            title="TO NG"
+          >
+            <img class="fb-logo" src="product/fb-logo.png" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/ouknhachan?igsh=cXoyenZrd2hhdnI4"
+            title="Ouknhachan"
+          >
+            <img src="product/ig-logo.webp" />
+          </a>
+        </div>
+      </div>
+      <hr width="100%" color=" #DA5A0F" />
+      <div class="product-footer">
+        <p>Products:</p>
+        <p>Original Brand</p>
+      </div>
+      <hr width="100%" color=" #DA5A0F" />
+      <div class="reference">
+        <p>Reference:</p>
+        <p>Recognized by the Ministry</p>
+      </div>
+    </div>
+    <script type="module" src="./home.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

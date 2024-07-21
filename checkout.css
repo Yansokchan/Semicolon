@@ -1,0 +1,241 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #555250;
+}
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(53, 52, 52);
+  margin-bottom: 20px;
+}
+
+.header {
+  color: #da5a0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.semicolon-logo {
+  width: 130px;
+  min-height: 26px;
+}
+h1 {
+  margin-bottom: 0;
+  text-align: center;
+  color: #f15f09;
+  margin-top: 0;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.re-item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 8px 10px rgb(116, 108, 108);
+  cursor: pointer;
+  background-color: rgb(53, 52, 52);
+}
+.re-item h3 {
+  color: #ec5a05;
+}
+.re-item-info p {
+  color: #ece7e4;
+}
+.delivery-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.delivery-date p {
+  color: rgb(6, 214, 6);
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.re-item-info .text-re-item .price-color {
+  color: #ee2828;
+  padding-left: 10px;
+}
+.re-item-info .text-re-item .name-color {
+  color: rgb(241, 236, 236);
+  padding-left: 10px;
+  font-weight: 550;
+}
+.re-item-info .text-re-item .q-color {
+  color: rgb(240, 229, 229);
+  padding-left: 10px;
+}
+.text-re-item div {
+  display: flex;
+  flex-direction: row;
+}
+.re-item img {
+  width: 100px;
+  margin-right: 10px;
+}
+.re-item-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 10px;
+  box-shadow: 0px 0px 1px 2px #da5a0f;
+  justify-content: space-around;
+}
+.text-re-itrm {
+  display: flex;
+  flex-direction: column;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.9;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.summary {
+  /* animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(53, 52, 52);
+  box-shadow: 0px 5px 8px 10px rgb(116, 108, 108);
+}
+.text {
+  color: #ffffff;
+}
+.price-color {
+  color: rgb(255, 94, 0);
+  font-weight: 600;
+  font-size: 18px;
+}
+.order-total-price {
+  color: #ff782b;
+  font-size: 20px;
+  font-weight: bold;
+}
+.order {
+  font-weight: 600;
+}
+.cart-item {
+  margin: 50px;
+  margin-top: 20px;
+}
+.summary .order {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0;
+  color: #ff6a14;
+}
+.item-price,
+.shipping,
+.total-before-tax,
+.tax,
+.date,
+.order-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+}
+.order-btn {
+  display: block;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #da5a0f;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: 0px 1px 2px 3px rgb(66, 65, 65);
+  transition: all 0.15s;
+}
+.order-btn:hover {
+  background-color: #ac460b;
+}
+.date-day {
+  color: rgb(5, 177, 5);
+}
+.order-btn:active {
+  background-color: #6e2e09;
+}
+.footer {
+  color: rgb(201, 199, 199);
+  padding: 30px;
+  background-color: rgb(53, 52, 52);
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  font-weight: bold;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+}
+.contact-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.fb-logo {
+  width: 100px;
+}
+.company {
+  font-size: 20px;
+}
+.contact a img {
+  width: 30px;
+  margin: 8px;
+  transition: all 0.15s;
+}
+.contact a img:hover {
+  transform: scale(1.5);
+}
+.product-footer,
+.reference,
+.company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,0 +1,359 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #555250;
+}
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(53, 52, 52);
+  margin-bottom: 20px;
+}
+.header {
+  color: #da5a0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.semicolon-logo {
+  width: 130px;
+  min-height: 26px;
+}
+h1 {
+  margin-left: 50px;
+  margin-bottom: 0;
+  color: #f56d1e;
+  margin-top: 0;
+  padding: 5px;
+  font-size: 30px;
+}
+h2 {
+  color: white;
+}
+.aba,
+.khqr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0px 0px 1px 2px #da5a0f;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.15s;
+}
+.khqr:hover {
+  transform: scale(1.025);
+}
+.aba:hover {
+  transform: scale(1.025);
+}
+
+.aba p,
+.khqr p {
+  color: white;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.aba {
+  margin-bottom: 20px;
+}
+.aba img,
+.khqr img {
+  width: 70px;
+  height: 40px;
+}
+.aba img,
+.khqr img {
+  margin-left: 10px;
+}
+.aba div h2,
+.aba div p,
+.khqr div h2,
+.khqr div p {
+  margin: 0px;
+}
+.pay-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.pay {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 50px;
+  background-color: rgb(53, 52, 52);
+  margin-top: 0;
+  box-shadow: 0px 5px 8px 10px rgb(116, 108, 108);
+}
+.choose-pay {
+  margin-bottom: 10px;
+  text-align: center;
+  margin-left: 0;
+}
+.payment {
+  display: block;
+  margin: auto;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 5px 8px 8px rgb(116, 108, 108);
+  background-color: #e05809;
+  transition: all 0.15s;
+}
+.payment:active {
+  background-color: rgb(153, 149, 149);
+}
+.payment:hover {
+  transform: scale(1.07);
+}
+.scan-qr {
+  position: fixed;
+  height: 90vh;
+  left: 50%;
+  top: -100%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 400px;
+  max-width: 100vw;
+  transform: translate(-50%, -50%);
+  transition: top 0.1s;
+}
+.khqr-logo {
+  width: 150px;
+  margin: 15px;
+}
+.js-pay-btn a {
+  text-decoration: none;
+}
+.qr-code {
+  background-color: rgb(53, 52, 52);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: -1px 1px 3px 3px rgb(148, 146, 146);
+}
+.qr-code-pic {
+  width: 300px;
+}
+.finish {
+  margin: 20px;
+  padding: 15px 30px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  background-color: #f56d1e;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px 8px rgb(100, 99, 99);
+  transition: all 0.15s;
+}
+.finish:active {
+  background-color: rgb(145, 142, 142);
+}
+.finish:hover {
+  background-color: rgb(196, 76, 6);
+  transform: scale(1.025);
+}
+.header-re {
+  background-color: rgb(53, 52, 52);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-re img {
+  width: 130px;
+  height: 26px;
+}
+.header-re h1,
+.header-re img {
+  margin: 10px;
+}
+.message {
+  border: none;
+  box-shadow: 0px 2px 4px 4px rgb(128, 125, 125);
+  text-align: center;
+  width: 300px;
+  position: fixed;
+  left: -50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(53, 52, 52);
+  border-radius: 5px;
+}
+.message-to-cus {
+  margin: 10px;
+}
+.message {
+  color: #f76a18;
+}
+.ms-date {
+  color: rgb(8, 243, 8);
+}
+.ok-btn {
+  padding: 7px 25px;
+  border: none;
+  background-color: #da5a0f;
+  color: white;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px 2px rgb(78, 78, 78);
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.ok-btn:hover {
+  background-color: #a8440a;
+}
+.ok-btn:active {
+  background-color: #da5a0f;
+}
+.product-re {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 55px;
+  scrollbar-color: #da5a0f rgb(240, 235, 235);
+}
+.item-receipt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.receipt {
+  position: fixed;
+  height: auto;
+  background-color: #4b4846;
+  left: 50%;
+  top: -100%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 400px;
+  max-width: 100vw;
+  transform: translate(-50%, -50%);
+  transition: top 0.25s;
+  box-shadow: -1px 1px 3px 4px rgb(117, 116, 116);
+}
+.product .text,
+.product-re .text {
+  color: white;
+}
+.product .price,
+.product-re .price {
+  color: rgb(2, 255, 2);
+}
+.product .day {
+  color: #f8813c;
+}
+.order-price {
+  color: #ff5e00;
+  font-size: 20px;
+}
+.total-price-order {
+  color: #13ff46;
+  font-size: 20px;
+  font-weight: 600;
+}
+.re-container {
+  margin: 5px 15px;
+}
+.total-order {
+  border: 2px solid #ff5e00;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+a {
+  display: flex;
+  justify-content: end;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.done {
+  padding: 10px 30px;
+  background-color: #f76a18;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px 4px rgb(107, 107, 107);
+}
+.done:active {
+  background-color: rgb(119, 117, 117);
+}
+.footer {
+  color: rgb(201, 199, 199);
+  padding: 30px;
+  background-color: rgb(53, 52, 52);
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  font-weight: bold;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+}
+.contact-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.fb-logo {
+  width: 100px;
+}
+.company {
+  font-size: 20px;
+}
+.contact a img {
+  width: 30px;
+  margin: 8px;
+  transition: all 0.15s;
+}
+.contact a img:hover {
+  transform: scale(1.5);
+}
+.product-footer,
+.reference,
+.company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

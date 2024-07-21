@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./payment.css" />
+  </head>
+  <body>
+    <header>
+      <a href="home.html">
+        <img
+          class="semicolon-logo"
+          src="icon/semicolon-logo.png"
+          alt="semicolon-logo"
+          title="Home"
+        />
+      </a>
+      <h1 class="header">Payment</h1>
+    </header>
+    <h1 class="choose-pay" data-aos="fade-down">Choose payment</h1>
+    <main class="pay" data-aos="fade-up">
+      <div class="aba js-aba" id="aba" data-aos="fade-right">
+        <img src="icon/aba-icon.png" />
+        <div class="pay-info">
+          <h2>ABA PAY</h2>
+          <p>Scan to pay with ABA Mobile.</p>
+        </div>
+      </div>
+      <div class="khqr js-khqr" data-aos="fade-left" id="khqr">
+        <img src="icon/khqr-icon.png" />
+        <div class="pay-info">
+          <h2>KHQR</h2>
+          <p>Scan to pay with member bank app.</p>
+        </div>
+      </div>
+    </main>
+    <div class="js-pay-btn"></div>
+    <div class="scan-qr" id="payment">
+      <div class="qr-code">
+        <img class="khqr-logo" src="icon/khqr-logo.png" />
+        <img class="qr-code-pic" src="icon/qr-code-icon.png" />
+        <button class="finish js-finish">Finished</button>
+      </div>
+    </div>
+    <div class="message" id="message">
+      <div class="text-ms"></div>
+      <button class="ok-btn js-ok-btn">OK</button>
+    </div>
+    <div class="receipt" id="finish-btn"></div>
+    <div class="footer">
+      <div class="company">
+        <p>Company:</p>
+        <p>SEMICOLON🍀</p>
+      </div>
+      <hr width="100%" color=" #DA5A0F" />
+      <div class="contact">
+        <p>Contact Us:</p>
+        <div class="contact-logo">
+          <a target="_blank" href="https://t.me/YanSokchan" title="Yan Sokchan">
+            <img src="product/telegram-logo.webp" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/kh.boyloy.1?mibextid=JRoKGi"
+            title="TO NG"
+          >
+            <img class="fb-logo" src="product/fb-logo.png" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/ouknhachan?igsh=cXoyenZrd2hhdnI4"
+            title="Ouknhachan"
+          >
+            <img src="product/ig-logo.webp" />
+          </a>
+        </div>
+      </div>
+      <hr width="100%" color=" #DA5A0F" />
+      <div class="product-footer">
+        <p>Products:</p>
+        <p>Original Brand</p>
+      </div>
+      <hr width="100%" color=" #DA5A0F" />
+      <div class="reference">
+        <p>Reference:</p>
+        <p>Recognized by the Ministry</p>
+      </div>
+    </div>
+    <script type="module" src="./payment.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

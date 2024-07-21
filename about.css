@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #555250;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(53, 52, 52);
+  text-align: center;
+}
+header a img {
+  width: 180px;
+  height: 25px;
+  padding: 20px;
+}
+section h1 {
+  font-size: 30px;
+  color: white;
+  margin: 0;
+}
+section p {
+  color: rgb(196, 122, 100);
+  font-size: 19px;
+}
+section {
+  display: flex;
+  /* position: absolute; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: 30px 20px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 4px rgb(196, 122, 100);
+}
+li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 25px;
+  box-shadow: 0px 2px 4px 4px rgb(196, 122, 100);
+}
+li a img {
+  width: 25px;
+  margin-right: 5px;
+}
+li a p {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.footer {
+  color: rgb(201, 199, 199);
+  padding: 30px;
+  background-color: rgb(53, 52, 52);
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  font-weight: bold;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+}
+.contact-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.fb-logo {
+  width: 100px;
+}
+.company {
+  font-size: 20px;
+}
+.contact a img {
+  width: 30px;
+  margin: 8px;
+  transition: all 0.15s;
+}
+.contact a img:hover {
+  transform: scale(1.5);
+}
+.product-footer,
+.reference,
+.company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
