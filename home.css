@@ -134,6 +134,7 @@ body {
 }
 .menu-bar ul li {
   list-style: none;
+}
 .menu-bar ul li a {
   display: flex;
   align-items: center;
